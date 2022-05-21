@@ -133,3 +133,12 @@ router 合约需要用到 【factory 合约地址】 和 【weth 合约地址】
 ③. router 合约
 ④. multicall 合约
 ⑤. ERC20 发布 token
+
+### 发布到 ghpage 上
+
+interface 目录下：
+
+1. 下载 gh-pages： `yarn add gh-pages`
+2. `package.json`文件中增加一句脚本 `"deploy":"gh-pages -d build"`
+3. 目录下执行`yarn build`编译后新增了`build`文件夹
+4. 目录下执行`yarn deploy`,显示 published,表示成功布置到了 GitHub page 上了
